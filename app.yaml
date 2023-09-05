@@ -1,0 +1,4 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT run:app
+env_variables:
+  DATABASE_URI: 'income-and-expences-db:europe-central2:mainiedb'
